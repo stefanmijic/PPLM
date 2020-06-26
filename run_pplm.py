@@ -835,9 +835,11 @@ def run_pplm_example(
             else:
                 pert_gen_text = tokenizer.decode(pert_gen_tok_text.tolist()[0])
 
-            print("= Perturbed generated text {} =".format(i + 1))
-            print(pert_gen_text)
-            print()
+            f = open("output.txt", "a")
+            print("= Perturbed generated text {} =".format(i + 1), file=f)
+            print(pert_gen_text, file=f)
+            f.close()
+
         except:
             pass
 
