@@ -56,6 +56,8 @@ VERBOSITY_LEVELS = {
 }
 
 BAG_OF_WORDS_ARCHIVE_MAP = {
+    'affect': "https://ethmun.org/wp-content/uploads/2020/06/affect.txt",
+    'cognition': "https://ethmun.org/wp-content/uploads/2020/06/cognition.txt",
     'legal': "https://s3.amazonaws.com/models.huggingface.co/bert/pplm/bow/legal.txt",
     'military': "https://s3.amazonaws.com/models.huggingface.co/bert/pplm/bow/military.txt",
     'monsters': "https://s3.amazonaws.com/models.huggingface.co/bert/pplm/bow/monsters.txt",
@@ -795,9 +797,11 @@ def run_pplm_example(
 
     if verbosity_level >= REGULAR:
         print("=" * 80)
-    print("= Unperturbed generated text =")
-    print(unpert_gen_text)
-    print()
+
+    # print("= Unperturbed generated text =")
+    # print(unpert_gen_text)
+    # print()
+    # lawecon marker 1
 
     generated_texts = []
 
