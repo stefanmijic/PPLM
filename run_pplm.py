@@ -86,6 +86,7 @@ DISCRIMINATOR_MODELS_PARAMS = {
         "default_class": 3,
         "pretrained_model": "gpt2-medium",
     },
+    # LAWECON Placeholder for "emotionality" discrim
 }
 
 
